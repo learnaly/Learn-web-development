@@ -1,0 +1,29 @@
+.home {
+  width: 100%;
+  max-width: 750px;
+  margin: 145px auto;
+}
+
+.post {
+  margin-bottom: 44px;
+  padding: 44px;
+  background-color: #fafafa;
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post>h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 34px;
+  color: darkcyan;
+  text-transform: capitalize;
+}
+
+.post>p {
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.74;
+  color: #555;
+}
