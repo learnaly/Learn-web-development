@@ -61,7 +61,7 @@ const run = async () => {
 
   const routes_contacts = express.Router();
 
-  // Get /contacts - Returns all contacts
+  // GET /contacts - Returns all contacts
   routes_contacts.get('/', async (req, res) => {
     const collection = mongo.db.collection('contacts');
 
