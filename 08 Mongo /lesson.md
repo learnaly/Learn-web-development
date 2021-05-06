@@ -181,7 +181,7 @@ await connectToMongo();
 
 const collection_posts = mongo.db.collection('posts');
 
-const my_posts = await collection_posts.find();
+const my_posts = await collection_posts.find().toArray();
 ```
 
 It maybe sounds complicated to a beginner, but that's it, you don't have to memorize or understand every single detail in the beginning, it's important just that you have this code you can copy / paste reuse, as you know you'll need it, and that's it.
@@ -206,7 +206,7 @@ If you need more info on it, quick google easily does it. :)
 
 You can find small Express app with Mongo code example in `example` folder in this (same) folder.
 
-You can copy these lessons folders locally, enter that folder in your PC console in VScode, and run `npm install` and after `npm start` to start the app, app will be running on `http://localhost:5000 in your browser.
+You can copy these lessons folders locally, enter that folder in your PC console in VScode, and run `npm install` and after `npm start` to start the app, app will be running on http://localhost:5000 in your browser.
 
 # Task
 
