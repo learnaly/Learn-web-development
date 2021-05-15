@@ -1,0 +1,56 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "start:server": "node ./server",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/styles": "^4.11.4",
+    "axios": "^0.21.1",
+    "clsx": "^1.1.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "history": "4.10.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "notistack": "^1.0.7",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "rxjs": "^7.0.1",
+    "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">=12.8",
+    "yarn": ">=1.22"
+  }
+}
