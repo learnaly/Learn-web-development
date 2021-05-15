@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 import { Typography } from '../../';
 
@@ -24,7 +25,23 @@ const useStyles = makeStyles(theme => ({
 function Posts(props) {
     const classes = useStyles();
 
-    return (
+    const title = 'Posts';
+    const description = `Blog posts.`;
+
+    return <>
+        <NextSeo
+            title={title}
+            description={description}
+            openGraph={{
+                title,
+                description,
+                images: [
+                    { url: '/assets/images/social.png' },
+                ],
+                site_name: 'Qoolpage',
+            }}
+        />
+
         <div className={classes.root}>
             {props.posts && props.posts.response.map((post, index) => (
                 <Link
@@ -44,7 +61,7 @@ function Posts(props) {
                 </Link>
             ))}
         </div>
-    );
+    </>;
 }
 
 export default Posts;
