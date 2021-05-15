@@ -21,10 +21,5 @@ This is a full stack blog app, using:
 3. Blog app - Next.js (front-end app for end users to read our blog posts)
 - Theming (Dark/light theme)
 
-4. Deployment, we will:
-- Upload the code to Github
-- Use CircleCI for automatically running tests for our server, every time we push to github / pre deploy
-- Deploy our server and apps using free tier in heroku, so we can use the apps online
-
 This is a very simple way of doing things, aimed at beginner web developers. \
-That's it, hope it's usefull for you. :)
+That's it, hope it'll be usefull for you. :)
