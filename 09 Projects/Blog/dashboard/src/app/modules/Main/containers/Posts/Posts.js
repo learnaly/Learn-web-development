@@ -65,6 +65,15 @@ export default function Posts() {
                         {post.data.title}
                     </Link>
                 ))}
+
+                {!(posts && posts.response.length) && (
+                    <Typography
+                        variant='overline'
+                        style={{ textAlign: 'center' }}
+                    >
+                        No posts
+                    </Typography>
+                )}
             </div>
         </div>
     );
