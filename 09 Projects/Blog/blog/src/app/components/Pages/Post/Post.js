@@ -49,7 +49,7 @@ function Post(props) {
                     variant='h1'
                     className={classes.title}
                 >
-                    {props.post.data.title}
+                    {props.post.title || props.post.data.title}
                 </Typography>
 
                 <Typography

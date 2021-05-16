@@ -55,7 +55,7 @@ function Posts(props) {
                         <Typography
                             variant='h1'
                         >
-                            {post.data.title}
+                            {post.title || post.data.title}
                         </Typography>
                     </a>
                 </Link>

@@ -29,7 +29,7 @@ const run = async () => {
         useUnifiedTopology: true,
       },
       (error, client) => {
-        if (error) throw new ConnectionError(error.message);
+        if (error) throw new Error(error.message);
         console.log('Mongo has connected');
 
         // Client is like our currently running connection to mongo from our server
@@ -49,7 +49,7 @@ const run = async () => {
 
   // This one means front-end apps can send JSON in request body
   // and our app will be able to parse it and use it
-  app.use(express.json({ limig: 105 * 1024 * 1024 })); // 105 mb limit of JSON size that request can send
+  app.use(express.json({ limit: 105 * 1024 * 1024 })); // 105 mb limit of JSON size that request can send
   // Other fancy plugins
   app.use(morgan('combined'));
   app.use(helmet());
