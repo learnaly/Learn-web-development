@@ -1,9 +1,9 @@
 
-# CSS
+# JavaScript
 
 <br/>
 
-### [Youtube video for this lesson](https://www.youtube.com)
+### [Youtube video for this lesson](https://youtu.be/cW19ibrk60Y)
 
 <br/>
 

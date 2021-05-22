@@ -3,7 +3,7 @@
 
 <br/>
 
-### [Youtube video for this lesson](https://www.youtube.com/watch?v=1XCcFjGpWsw)
+### [Youtube video for this lesson](https://youtu.be/1XCcFjGpWsw)
 
 <br/>
 
