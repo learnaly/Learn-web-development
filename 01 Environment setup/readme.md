@@ -2,6 +2,10 @@
 # Environment setup
 
 <br/>
+c
+### [Youtube video for this lesson](https://youtu.be/b9j9YdhkON)
+
+<br/>
 
 ## About
 
