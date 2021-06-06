@@ -2,8 +2,8 @@
 # Environment setup
 
 <br/>
- 
-[Youtube video for this lesson](https://youtu.be/b9j9YdhkON)
+
+[Youtube video for this lesson](https://youtu.be/b9j9YdhkONc)
 
 <br/>
 
