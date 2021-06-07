@@ -70,9 +70,11 @@ Now that we have automated tests setup for our API, we can now deploy our API.
 
 To create a team you have to add a debit / credit card, but it will not be charged if you stick with free dynos (heroku deployment options).
 
-**Free option caveat** - Heroku gives you a free dyno, dyno is just a server that will deploy your app online. The free version of it however sleeps and only wakes up once someone sends a request, waking up of the dyno can take some time, few seconds, so if someone hasn't entered your app for 15 min or so, that first request (openning the app) will take a bit longer, and then subsequent requests will be faster.
+**Free option caveat** - Heroku gives you a free dyno in Personal account only. Dyno is just a server that will deploy your app online. The free version of it however sleeps and only wakes up once someone sends a request, waking up of the dyno can take some time, few seconds, so if someone hasn't entered your app for 15 min or so, that first request (openning the app) will take a bit longer, and then subsequent requests will be faster.
 
-3. Now enter your back-end team and create a pipeline, and give it a name based on your API repository name. Pipelines are encapsulated space where you can deploy multiple versions of the same app. If you remember above about development and production environments in one pipeline we deploy development and production API versions, where development app deploys automatically in connection to our dev branch, and production app never deploys automatically, but only after we manually click deploy in connection to our master branch.
+3. If you want a paid version enter your back-end team for example, otherwise stay at your Personal account in heroku and create a pipeline, and give it a name based on your API repository name. Pipelines are encapsulated space where you can deploy multiple versions of the same app. If you remember above about development and production environments in one pipeline we deploy development and production API versions, where development app deploys automatically in connection to our dev branch, and production app never deploys automatically, but only after we manually click deploy in connection to our master branch.
+
+**Important**: Heroku only allows free versions of the apps in Personal account, not in custom created teams.
 
 Once you created your pipeline, enter it, go to settings tab and search for and connect it to your API github repoistory you want deployed here.
 
