@@ -59,6 +59,10 @@ Anyways, tests i ofc always write in heavy detail as much as i can are back-end 
 9. In environment variables add your private env vars you use for your API, like your database url, `DB_MONGO_URI` or however you named it.
 10. That's it, so now anytime you push some new code to your github repo, github will notify Circle CI of this update, Circle CI will download your API github repository code, and run tests in it.
 
+**Important** since in API tests we locally use a dummy database that we can drop (delete) after every round of tests, but that's locally, what i recommend for now, in these introductory tutorials, is create a separate Atlas Mongo DB from your actual database, and create user privilegies for that test database to be able to drop database, and delete collections, and use URL to that test database as environment variable in Circle CI, so Circle CI can use that test database do add fixtures to it, test your api endpoints using test database, and then drop (delete) that database upon test end. Mind you this is not scalable at all, since if you have 2 API's concurrently (at the same time) running tests using same test database, they will keep adding, dropping the same test database at the same time, and tests will fail.
+
+In actual reality, there's a more advanced version of Circle CI config, where they will prior to running tests setup a local version of Mongo DB just for span of time for running tests. But, that Circle CI you'll be able to find in my soon to be open sourced API boilerplate repository. For now, if at the point in time of you reading this, i haven't yet posted my open source API boilerplate repository, create an Atlas Mongo DB test database, and use that one for running Circle CI automated tests.
+
 ## Deployment
 
 You can do this for free.
