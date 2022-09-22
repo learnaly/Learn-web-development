@@ -265,7 +265,7 @@ ie.
   }
 ```
 
-![Flexbox Froggy online game to learn flex](https://flexboxfroggy.com)
+[Flexbox Froggy online game to learn flex](https://flexboxfroggy.com)
 
 ![Flex css](https://i.imgur.com/bszVWTh.png)
 
